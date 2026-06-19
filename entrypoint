@@ -11,4 +11,3 @@ set -x
     $EXTRAS \
     --keepalive true
 
-echo $?
