@@ -3,7 +3,7 @@
 set -x
 
 # Run with the configured parameters
-exec ./SRBMiner-MULTI \
+./SRBMiner-MULTI \
     --algorithm "$ALGO" \
     --pool "$POOL_ADDRESS" \
     --wallet "$WALLET_USER.$WORKER" \
@@ -11,3 +11,4 @@ exec ./SRBMiner-MULTI \
     $EXTRAS \
     --keepalive true
 
+echo $?
