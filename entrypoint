@@ -15,8 +15,7 @@ echo "--algorithm $ALGO"
 echo "--pool $POOL_ADDRESS"
 echo "--wallet $WALLET_USER.$WORKER"
 echo "--password $PASSWORD"
-echo "--extras $EXTRAS"
-echo "--cpu-threads $cpu_threads"
+echo " -- -- -- \nextras\n$EXTRAS"
 echo "--keepalive true"
 
 # Run with the configured parameters
@@ -24,8 +23,7 @@ exec ./SRBMiner-MULTI \
     --algorithm "$ALGO" \
     --pool "$POOL_ADDRESS" \
     --wallet "$WALLET_USER.$WORKER" \
-    --password "$PASSWORD" \
+    ${PASSWORD:+--password "$PASSWORD"} \
     $EXTRAS \
-    --cpu-threads "$cpu_threads" \
     --keepalive true
 
