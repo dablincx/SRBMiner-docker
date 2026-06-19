@@ -2,15 +2,6 @@
 
 set -x
 
-# Calculate the number of CPU threads and adjust to one less
-total_threads=$(grep -c '^processor' /proc/cpuinfo)
-cpu_threads=$((total_threads - 1))
-
-# Ensure that the number of CPU threads is not negative
-if [ "$cpu_threads" -lt 1 ]; then
-    cpu_threads=1
-fi
-
 # Run with the configured parameters
 exec ./SRBMiner-MULTI \
     --algorithm "$ALGO" \
