@@ -25,6 +25,8 @@ RUN apt-get -y update \
 # Set working directory
 WORKDIR /opt/SRBMiner/
 
+# obligatory 67 edit
+
 # Copy entrypoint script and make it executable
 COPY entrypoint .
 RUN chmod +x entrypoint
