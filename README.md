@@ -1,9 +1,9 @@
 # 🚀 Docker-SRBMiner-Multi
 
 <p align="center">
-  <img src="https://img.shields.io/docker/pulls/commoodor/srbminer-docker?style=for-the-badge" />
-  <img src="https://img.shields.io/docker/image-size/commoodor/srbminer-docker?style=for-the-badge" />
-  <img src="https://img.shields.io/github/actions/workflow/status/commoodor/SRBMiner-docker/docker-publish.yml?branch=latest&style=for-the-badge" />
+  <img src="https://img.shields.io/docker/pulls/dablincx/srbminer-docker?style=for-the-badge" />
+  <img src="https://img.shields.io/docker/image-size/dablincx/srbminer-docker?style=for-the-badge" />
+  <img src="https://img.shields.io/github/actions/workflow/status/dablincx/SRBMiner-docker/docker-publish.yml?branch=latest&style=for-the-badge" />
   <img src="https://img.shields.io/github/v/release/doktor83/SRBMiner-Multi?style=for-the-badge&label=Upstream%20Version" />
 </p>
 
