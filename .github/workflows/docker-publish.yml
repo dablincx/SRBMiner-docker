@@ -22,7 +22,7 @@ jobs:
           VERSION=$(echo "$LATEST_RELEASE" | jq -r '.tag_name')
 
           # Output the version and set it as an environment variable
-          echo "version=$VERSION" >> $GITHUB_ENV
+          echo "version=$VERSION" >> $GITHUB_OUTPUTS
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
@@ -42,8 +42,8 @@ jobs:
           file: Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ghcr.io/dablincx/SRBMiner-docker:${{ steps.fetch_version.outputs.VERSION }}
-            ghcr.io/dablincx/SRBMiner-docker:${{ steps.fetch_version.outputs.VERSION }}-${{ github.run_number }}
+            ghcr.io/dablincx/SRBMiner-docker:${{ steps.fetch_version.outputs.version }}
+            ghcr.io/dablincx/SRBMiner-docker:${{ steps.fetch_version.outputs.version }}-${{ github.run_number }}
             ghcr.io/dablincx/SRBMiner-docker:${{ github.sha }}
             ghcr.io/dablincx/SRBMiner-docker:latest
           build-args: |
