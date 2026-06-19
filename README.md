@@ -60,12 +60,6 @@ services:
 
 ## support development
 
-<p align="center">
-  <a href="https://github.com/sponsors/commoodor">
-    <img src="https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ff69b4?style=for-the-badge&logo=githubsponsors&logoColor=white" />
-  </a>
-</p>
-
 <details>
 <summary>click to view donation addresses</summary>
 
@@ -74,10 +68,12 @@ services:
 <img src="https://img.shields.io/badge/Bitcoin-ff9900?style=for-the-badge&logo=bitcoin&logoColor=white" />
 <br/>
 <code>bc1pma9e2v5pj06y75xhfl46quyt5dzlmjcvkvn7gtpcfs0edu2mp6ysdw5axv</code>
+<br/>
 
 <img src="https://img.shields.io/badge/Ethereum-627eea?style=for-the-badge&logo=ethereum&logoColor=white" />
 <br/>
 <code>0xC97Af2150C59C55196EDf0900D4Af34dCE1C2AEF</code>
+<br/>
 
 <img src="https://img.shields.io/badge/Monero-ff6600?style=for-the-badge&logo=monero&logoColor=white" />
 <br/>
