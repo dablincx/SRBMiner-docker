@@ -1,46 +1,41 @@
 # 🚀 Docker-SRBMiner-Multi
 
 <p align="center">
-  <img src="https://img.shields.io/docker/pulls/dablincx/SRBMiner-docker?style=for-the-badge" />
-  <img src="https://img.shields.io/docker/image-size/dablincx/SRBMiner-docker?style=for-the-badge" />
+  <!--<img src="https://img.shields.io/docker/pulls/dablincx/SRBMiner-docker?style=for-the-badge" />
+  <img src="https://img.shields.io/docker/image-size/dablincx/SRBMiner-docker?style=for-the-badge" />-->
   <img src="https://img.shields.io/github/actions/workflow/status/dablincx/SRBMiner-docker/docker-publish.yml?branch=latest&style=for-the-badge" />
   <img src="https://img.shields.io/github/v/release/doktor83/SRBMiner-Multi?style=for-the-badge&label=Upstream%20Version" />
 </p>
 
 ---
 
-## 📦 About
+## about
 
-A Docker image for **SRBMiner-Multi**.
+fork of https://github.com/commoodor/SRBMiner-docker without forced cpu
 
-🔄 **Upstream Version (auto-updated):**  
+🔄 **Upstream Version:**  
 ![Upstream Version](https://img.shields.io/github/v/release/doktor83/SRBMiner-Multi?label=Latest%20Release)
-
-This image automatically tracks the latest release from:
-
-👉 https://github.com/doktor83/SRBMiner-Multi
 
 ---
 
-## ⚡ Quick Start (Docker Compose)
+## quick stard compose file
 
 ```yaml
-version: '3.8'
-
 services:
   SRBMiner:
     container_name: SRBMiner
-    image: commoodor/srbminer-docker
+    image: ghcr.io/dablincx/srbminer-docker:latest
     restart: unless-stopped
     tty: true
     mem_limit: 1g
+    gpus: all
     environment:
-      ALGO: verushash
+      ALGO: yomama
       POOL_ADDRESS: stratum+ssl://sg.vipor.net:5140
-      WALLET_USER: RRmpZ1tajCXVG9999LWUD4CPVyZvjpe3iZ
-      WORKER: Saturn
-      PASSWORD: x
-      EXTRAS:
+      WALLET_USER: 6767676767676767676767676767676767
+      WORKER: yo_mama
+      # PASSWORD: x
+      EXTRAS: --disable-cpu
     logging:
       driver: "json-file"
       options:
@@ -63,7 +58,7 @@ services:
 
 ---
 
-## ❤️ Support Development
+## support development
 
 <p align="center">
   <a href="https://github.com/sponsors/commoodor">
@@ -72,7 +67,7 @@ services:
 </p>
 
 <details>
-<summary>💰 Click to view donation addresses</summary>
+<summary>click to view donation addresses</summary>
 
 <br>
 
@@ -80,19 +75,19 @@ services:
 
 <img src="https://img.shields.io/badge/Bitcoin-ff9900?style=for-the-badge&logo=bitcoin&logoColor=white" />
 <br/>
-<code>bc1q3m9qxtaqzhzk0ay6e6dmxmz439n4f73zz0unqp</code>
+<code>bc1pma9e2v5pj06y75xhfl46quyt5dzlmjcvkvn7gtpcfs0edu2mp6ysdw5axv</code>
 
 <br><br>
 
 <img src="https://img.shields.io/badge/Ethereum-627eea?style=for-the-badge&logo=ethereum&logoColor=white" />
 <br/>
-<code>0x37A8997fBBa95cE12553745E2d6BA4F9Ae5Caa84</code>
+<code>0xC97Af2150C59C55196EDf0900D4Af34dCE1C2AEF</code>
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Dogecoin-c2a633?style=for-the-badge&logo=dogecoin&logoColor=white" />
+<img src="https://img.shields.io/badge/Monero-XMR-ff6600?style=for-the-badge&logo=monero&logoColor=white" />
 <br/>
-<code>D5CiFXE5PvLn5fQKjCuovecExSNjGct5UU</code>
+<code>842aa8LDTDbiknxbabhqxHVdi9WLL2oPPciLKzzeQx9bKVggeVV9JtnHpLWdu819UYV35CQHqS8sNEprMP9wu8ez6WZx4SC</code>
 
 </p>
 
