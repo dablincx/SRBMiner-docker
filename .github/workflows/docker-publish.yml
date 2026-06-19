@@ -22,7 +22,7 @@ jobs:
           VERSION=$(echo "$LATEST_RELEASE" | jq -r '.tag_name')
 
           # Output the version and set it as an environment variable
-          echo "version=$VERSION" >> $GITHUB_OUTPUTS
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v4
