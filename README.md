@@ -85,7 +85,7 @@ services:
 
 <br><br>
 
-<img src="https://img.shields.io/badge/Monero-XMR-ff6600?style=for-the-badge&logo=monero&logoColor=white" />
+<img src="https://img.shields.io/badge/Monero-ff6600?style=for-the-badge&logo=monero&logoColor=white" />
 <br/>
 <code>842aa8LDTDbiknxbabhqxHVdi9WLL2oPPciLKzzeQx9bKVggeVV9JtnHpLWdu819UYV35CQHqS8sNEprMP9wu8ez6WZx4SC</code>
 
