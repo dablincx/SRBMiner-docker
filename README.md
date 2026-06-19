@@ -1,4 +1,4 @@
-# 🚀 Docker-SRBMiner-Multi
+# SRBMiner Docker
 
 <p align="center">
   <!--<img src="https://img.shields.io/docker/pulls/dablincx/SRBMiner-docker?style=for-the-badge" />
@@ -13,8 +13,8 @@
 
 fork of https://github.com/commoodor/SRBMiner-docker without forced cpu
 
-🔄 **Upstream Version:**  
-![Upstream Version](https://img.shields.io/github/v/release/doktor83/SRBMiner-Multi?label=Latest%20Release)
+**upstream version:**  
+![upstream version](https://img.shields.io/github/v/release/doktor83/SRBMiner-Multi?label=Latest%20Release)
 
 ---
 
@@ -30,10 +30,10 @@ services:
     mem_limit: 1g
     gpus: all
     environment:
-      ALGO: yomama
-      POOL_ADDRESS: stratum+ssl://sg.vipor.net:5140
-      WALLET_USER: 6767676767676767676767676767676767
-      WORKER: yo_mama
+      ALGO: verushash
+      POOL_ADDRESS: stratum+tcp://na.luckpool.net:3956#xnsub
+      WALLET_USER: RRmpZ1tajCXVG9999LWUD4CPVyZvjpe3iZ
+      WORKER: Saturn
       # PASSWORD: x
       EXTRAS: --disable-cpu
     logging:
@@ -45,7 +45,7 @@ services:
 
 ---
 
-## 🛠 Environment Variables
+## environment variables
 
 | Variable        | Description              | Example                                      |
 |----------------|--------------------------|----------------------------------------------|
@@ -53,7 +53,7 @@ services:
 | `POOL_ADDRESS` | Mining pool address      | `stratum+tcp://na.luckpool.net:3956#xnsub`    |
 | `WALLET_USER`  | Wallet address or user   | `RRmpZ1tajCXVG9999LWUD4CPVyZvjpe3iZ`           |
 | `WORKER`       | Worker name              | `Saturn`                                     |
-| `PASSWORD`     | Pool password            | `x`                                          |
+| `PASSWORD`     | Pool password (optional) | `x`                                          |
 | `EXTRAS`       | Extra SRBMiner flags     | `-t 4`                                       |
 
 ---
@@ -87,15 +87,10 @@ services:
 
 ---
 
-## 📜 License
+## license
 
 This project redistributes official **SRBMiner-Multi** binaries.  
 Please refer to the upstream repository for full license details:
 
-👉 https://github.com/doktor83/SRBMiner-Multi
+- https://github.com/doktor83/SRBMiner-Multi
 
----
-
-<p align="center">
-  Built for performance • Optimized for Docker • Dark mode ready 🌙
-</p>
