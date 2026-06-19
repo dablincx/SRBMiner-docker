@@ -69,10 +69,12 @@ services:
 <br/>
 <code>bc1pma9e2v5pj06y75xhfl46quyt5dzlmjcvkvn7gtpcfs0edu2mp6ysdw5axv</code>
 <br/>
+<br/>
 
 <img src="https://img.shields.io/badge/Ethereum-627eea?style=for-the-badge&logo=ethereum&logoColor=white" />
 <br/>
 <code>0xC97Af2150C59C55196EDf0900D4Af34dCE1C2AEF</code>
+<br/>
 <br/>
 
 <img src="https://img.shields.io/badge/Monero-ff6600?style=for-the-badge&logo=monero&logoColor=white" />
