@@ -18,7 +18,7 @@ fork of https://github.com/commoodor/SRBMiner-docker without forced cpu
 
 ---
 
-## quick stard compose file
+## quick start compose file
 
 ```yaml
 services:
