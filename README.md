@@ -30,10 +30,10 @@ services:
     mem_limit: 2g
     gpus: all
     environment:
-      ALGO: verushash
-      POOL_ADDRESS: stratum+tcp://na.luckpool.net:3956#xnsub
-      WALLET_USER: RRmpZ1tajCXVG9999LWUD4CPVyZvjpe3iZ
-      WORKER: Saturn
+      ALGO: pearlhash
+      POOL_ADDRESS: prl.kryptex.network:7048
+      WALLET_USER: prl1p6mjua9hzcnalvqn8rah3d6vsga3pe26mlcpx2v6ne43rpjulyg9s4s5e6d
+      WORKER: unconfiguredgithubcopy
       # PASSWORD: x
       EXTRAS: --disable-cpu
     logging:
@@ -49,9 +49,9 @@ services:
 
 | Variable        | Description              | Example                                      |
 |----------------|--------------------------|----------------------------------------------|
-| `ALGO`         | Mining algorithm         | `verushash`                                  |
-| `POOL_ADDRESS` | Mining pool address      | `stratum+tcp://na.luckpool.net:3956#xnsub`    |
-| `WALLET_USER`  | Wallet address or user   | `RRmpZ1tajCXVG9999LWUD4CPVyZvjpe3iZ`           |
+| `ALGO`         | Mining algorithm         | `pearlhash`                                  |
+| `POOL_ADDRESS` | Mining pool address      | `prl.kryptex.network:7048`    |
+| `WALLET_USER`  | Wallet address or user   | `prl1p6mjua9hzcnalvqn8rah3d6vsga3pe26mlcpx2v6ne43rpjulyg9s4s5e6d`           |
 | `WORKER`       | Worker name              | `Saturn`                                     |
 | `PASSWORD`     | Pool password (optional) | `x`                                          |
 | `EXTRAS`       | Extra SRBMiner flags     | `-t 4`                                       |
