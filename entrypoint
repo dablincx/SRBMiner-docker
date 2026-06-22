@@ -11,6 +11,5 @@ nvidia-smi
     --wallet "$WALLET_USER.$WORKER" \
     ${PASSWORD:+--password "$PASSWORD"} \
     $EXTRAS \
-    --keepalive true \
-    --pearl-k2
+    --keepalive true
 
