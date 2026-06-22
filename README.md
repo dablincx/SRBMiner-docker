@@ -27,7 +27,7 @@ services:
     image: ghcr.io/dablincx/srbminer-docker:latest
     restart: unless-stopped
     tty: true
-    mem_limit: 1g
+    mem_limit: 2g
     gpus: all
     environment:
       ALGO: verushash
