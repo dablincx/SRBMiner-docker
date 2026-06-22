@@ -2,6 +2,8 @@
 
 set -x
 
+nvidia-smi
+
 # Run with the configured parameters
 ./SRBMiner-MULTI \
     --algorithm "$ALGO" \
